@@ -1,0 +1,62 @@
+
+.tb-home-container .topbar {
+    margin-left: 5px;
+}
+
+.tb-home-container .tutor-btns {
+    justify-content: center;
+    display: grid;
+    grid-column-gap: 50px;
+    grid-auto-columns: 25%;
+    grid-auto-rows: 25%;
+}
+
+#search-btn {
+    padding: 2.2px 8px;
+}
+
+.tb-home-container .progress {
+    display: inline-flex;
+    background: #ADF5FF;
+    border-radius: 3px;
+    width: 100px;
+    transform: translateX(160px);
+}
+
+.tb-home-container .prog2, .tb-home-container .prog3 {
+    background: #FBFEF9;
+}
+
+.tb-home-container .tb-nav {
+    background-color: #C1DADF;
+}
+
+.tb-nav .search-form {
+    display: inline;
+    padding: 10px;
+    float: right;
+    margin-top: 20px;
+}
+
+.tb-nav .tb-title {
+    display: inline;
+    color: #ADF5FF;
+    padding: 10px;
+}
+
+.fa-graduation-cap:before {
+    color: #ADF5FF;
+    padding-left: 10px;
+}
+
+#tutor-bttns {
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+}
+
+button.btn.tb-btn {
+    padding: 25px;
+    margin: 10px;
+    width: 30%;
+}
