@@ -1,5 +1,5 @@
 <?php 
-
+/* 21 Day Project - Goal Selection Page */
 ?>
 
     <head>
@@ -24,8 +24,8 @@
 
 </head>
 <body>
-<div class="tb-home-container">
-    <nav class="navbar navbar-light tb-nav">
+<div class="home-container">
+    <nav class="navbar navbar-light g-nav">
                 <!-- <h1 class="fa tb-title">The 21 Day Project</h1> -->
                 <img src="assets/img/logo-transparent.png" height="75px">
                 <!-- <p class="progress prog1"></p>
@@ -39,8 +39,8 @@
 </div>
        
     <!-- TODO: make topics dynamically populated + implement logic for styling when odd number of topics!-->
-<script>
-    var $topics = [
+<?php
+    $goals = [
         'Social Science',
         'Computer Science',
         'English',
@@ -51,18 +51,21 @@
         'History',
         'Other'
     ];
-    </script>
+    ?>
 
-        <div id="tutor-bttns">
-        <!-- <button class="btn btn-primary tb-btns">Social Science</button> -->
-        <button class="btn tb-btn">Social Science</button>
-        <button class="btn tb-btn">Computer Science</button>
-        <button class="btn tb-btn">Science</button>
-        <button class="btn tb-btn">Mathematics</button>
-        <button class="btn tb-btn">Language Studies</button>
-        <button class="btn tb-btn">History</button>
-        <button class="btn tb-btn">Geography</button>
-    
+        <div class="g-bttns bttns">
+        <?php 
+        foreach($goals as $g) {
+        ?>
+        <button class="g-btn btn">
+        <h1 class="g-name"><?php echo $g ?></h1>
+        <p>This is a description</p>
+        <input type="date" value="<?php 
+        date_default_timezone_set('Canada/Eastern');
+        $date = date('Y-m-d'); 
+        echo date('Y-m-d', strtotime($date. ' + 21 days')); ?>">
+        </button>
+        <?php } ?>
     </div>
 </div>
 </body>
