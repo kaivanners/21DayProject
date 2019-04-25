@@ -59,3 +59,8 @@
     margin: 10px;
     width: 30%;
 }
+
+.g-name {
+    white-space: normal;
+    font-size: 20px;
+}

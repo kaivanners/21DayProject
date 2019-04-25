@@ -41,15 +41,25 @@
     <!-- TODO: make topics dynamically populated + implement logic for styling when odd number of topics!-->
 <?php
     $goals = [
-        'Social Science',
-        'Computer Science',
-        'English',
-        'Mathematics',
-        'Chemistry',
-        'Physics',
-        'Biology',
-        'History',
-        'Other'
+        'Software Development',
+        'Gaming',
+        'Writing Prompts',
+        'Journalism',
+        'Yoga',
+        'Exercise',
+        'Walking',
+        'Cooking',
+        'Dreaming',
+        'Photography',
+        'Knitting',
+        'Spring Cleaning',
+        'Blogging',
+        'Short Story Writing',
+        'Gratitude Journaling',
+        'Time Logging',
+        'Meditating',
+        'Photography + Painting',
+        'Reading'
     ];
     ?>
 
